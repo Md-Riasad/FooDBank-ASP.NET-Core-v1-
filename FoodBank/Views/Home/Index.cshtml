@@ -1,0 +1,50 @@
+﻿@model PaginatedList<FoodBank.Models.Restaurant>
+
+@{
+    ViewData["Title"] = "Index";
+
+    int i = 1;
+    int p = Model.PageIndex;
+    i = (p - 1) * 5 + 1;
+}
+
+
+<div class="row">
+    <div class="col-md-10">
+        <form class="form-inline " asp-controller="Home" asp-action="Index" method="post">
+
+            <input type="text" name="searchstr" class="form-control" value="@ViewBag.stext" placeholder=" Search here" />
+            <input type="submit" class="form-control btn btn-primary" value="Search" />
+        </form>
+    </div>
+</div>
+
+
+
+
+
+<h2 class=" alert-success ">Restaurant List</h2>
+
+@foreach (var item in Model)
+{
+    <div>
+        <h4 class="bg-info">@item.Name</h4>
+        <div>
+            @item.City, @item.Country
+        </div>
+        <hr />
+    </div>
+}
+
+
+@{
+    var prevDisabled = !Model.HasPreviousPage ? "disabled" : "";
+    var nextDisabled = !Model.HasNextPage ? "disabled" : "";
+}
+<a asp-action="Index"
+   asp-route-page=@(Model.PageIndex-1)
+   class="btn btn-primary @prevDisabled">Previous</a>
+
+<a asp-action="Index"
+   asp-route-page=@(Model.PageIndex+1)
+   class="btn btn-danger @nextDisabled">Next</a>

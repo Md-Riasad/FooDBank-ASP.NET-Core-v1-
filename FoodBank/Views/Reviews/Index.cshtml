@@ -1,0 +1,25 @@
+﻿@model IEnumerable<FoodBank.Models.Restaurant>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2 class="alert-success">RestauRant Name </h2>
+
+@foreach (var item in Model)
+{
+    <tr >
+        <td >
+         <h2 class="text-info">   @Html.DisplayFor(modelItem => item.Name)</h2>
+        </td>
+        <br/>
+       </tr>
+        <td>
+       
+            <a asp-controller="RestReviews" asp-action="Details" asp-route-id="@item.Id" class="btn btn-info">Details</a> |
+           
+
+       </td>
+   
+}
+    

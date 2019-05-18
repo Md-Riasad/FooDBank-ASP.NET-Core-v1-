@@ -1,0 +1,12 @@
+C:\Users\Riasad Rahman\source\repos\FoodBank\FoodBank\obj\Debug\netcoreapp2.0\FoodBank.csproj.CoreCompileInputs.cache
+C:\Users\Riasad Rahman\source\repos\FoodBank\FoodBank\obj\Debug\netcoreapp2.0\FoodBank.AssemblyInfoInputs.cache
+C:\Users\Riasad Rahman\source\repos\FoodBank\FoodBank\obj\Debug\netcoreapp2.0\FoodBank.AssemblyInfo.cs
+C:\Users\Riasad Rahman\source\repos\FoodBank\FoodBank\bin\Debug\netcoreapp2.0\FoodBank.deps.json
+C:\Users\Riasad Rahman\source\repos\FoodBank\FoodBank\bin\Debug\netcoreapp2.0\FoodBank.runtimeconfig.json
+C:\Users\Riasad Rahman\source\repos\FoodBank\FoodBank\bin\Debug\netcoreapp2.0\FoodBank.runtimeconfig.dev.json
+C:\Users\Riasad Rahman\source\repos\FoodBank\FoodBank\bin\Debug\netcoreapp2.0\FoodBank.dll
+C:\Users\Riasad Rahman\source\repos\FoodBank\FoodBank\bin\Debug\netcoreapp2.0\FoodBank.pdb
+C:\Users\Riasad Rahman\source\repos\FoodBank\FoodBank\obj\Debug\netcoreapp2.0\FoodBank.csprojAssemblyReference.cache
+C:\Users\Riasad Rahman\source\repos\FoodBank\FoodBank\obj\Debug\netcoreapp2.0\UserSecretsAssemblyInfo.cs
+C:\Users\Riasad Rahman\source\repos\FoodBank\FoodBank\obj\Debug\netcoreapp2.0\FoodBank.dll
+C:\Users\Riasad Rahman\source\repos\FoodBank\FoodBank\obj\Debug\netcoreapp2.0\FoodBank.pdb

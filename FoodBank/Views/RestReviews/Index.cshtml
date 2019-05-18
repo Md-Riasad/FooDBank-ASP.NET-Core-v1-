@@ -1,0 +1,54 @@
+﻿@model IEnumerable<FoodBank.Models.RestReview>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2 class="bg-primary">Restaurants Reviews</h2>
+
+<p>
+    <a asp-action="Create" class="btn btn-primary">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Rating)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Body)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.ReviewerName)
+                </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Restaurant)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Rating)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Body)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ReviewerName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Restaurant.Id)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-default">Edit</a> 
+                <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-info">Details</a> 
+                <a asp-controller="Reviews" asp-action="Index" asp-route-id="@item.Id" class="btn btn-success">Reviews</a> 
+                <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger">Delete</a> 
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
